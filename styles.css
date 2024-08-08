@@ -34,7 +34,7 @@ body {
     font-family: 'Outfit', 'sans-serif';
     width: 100vw;
     min-width: 375px;
-    background-color:  hsl(var(--clr-rose50));
+    background-color:  hsl(var(--clr-stone100));
     line-height: 150%;
     letter-spacing: 0px;
     font-size: 16px;
@@ -209,8 +209,9 @@ td {
 }
 
 main {
-    background-color: hsl(var(--clr-rose50));
+    background-color: hsl(var(--clr-stone100));
     position: relative;
+    height: 2000px;
 }
 
 .prep {
