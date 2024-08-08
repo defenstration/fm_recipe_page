@@ -11,7 +11,7 @@
     --clr-stone600: 30 10% 34%;
     --clr-stone900: 24 5% 18%;
     --clr-rose800: 332 51% 32%;
-    --clr-rose50: 330 100% 88%;
+    --clr-rose50: 330 100% 93%;
 }
 
 /*--------------------------------*/
@@ -24,7 +24,7 @@
 
 /* Reset margins                          */
 
-body, h1, h2, h3, p {
+body, h1, h2, h3, h4, p, ul, ol {
     margin: 0
 }
 
@@ -120,12 +120,12 @@ main {
 }
 
 .prep {
-    padding-inline: 10px
+    padding-inline: 20px
 }
 
 .recipe-wrapper {
     background-color: hsl(var(--clr-white));
-    width: 50%;
+    width: 750px;
     padding: 25px;
     border-radius: 10px;
     position: relative;
@@ -140,6 +140,10 @@ h3 {
        color: hsl(var(--clr-brown)); 
 }
 
+li {
+    line-height: 200%;
+}
+
 table {
     width: 100%;
 }
@@ -147,6 +151,18 @@ table {
 th, td {
     width: 50%;
     text-align: left;
+}
+
+.name {
+    margin: 15px 0 10px 0;
+}
+
+.section-header {
+    margin-top: 15px;
+}
+
+.ingredients, .instructions, .nutrition {
+    border-bottom: 2px solid black
 }
 
 /*--------------------------------*/
@@ -157,7 +173,9 @@ th, td {
 
     .recipe-wrapper {
         width: 375px;
+        min-width: 375px;
         padding: 0px;
+        top: 0;
     }
 
     .nutrition, .instructions, .ingredients, .prep, .name, .description {
@@ -166,3 +184,4 @@ th, td {
     
 
 }
+
